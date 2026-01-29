@@ -8,11 +8,11 @@ const mysql = require('mysql2/promise');
 const port = process.env.PORT || 3018;
 
 const dbConfig = {
-	host: process.env.DB_HOST,
-	port: process.env.DB_PORT,
-	user: process.env.DB_USER,
-	password: process.env.DB_PASSWORD,
-	database: process.env.DB_DATABASE,
+	host: process.env.DB_HOST || "mysql-c9f4c21-comp2350wee02.h.aivencloud.com",
+	port: process.env.DB_PORT || 19311,
+	user: process.env.DB_USER || "avnadmin",
+	password: process.env.DB_PASSWORD || "AVNS_eT82qrb5grVbPkog4Ta",
+	database: process.env.DB_DATABASE || "defaultdb",
 	multipleStatements: false
 };
 
